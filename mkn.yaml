@@ -2,6 +2,6 @@
 
 name: time.ccronexpr
 version: master
-include: .
-source:  .
+inc: .
+src: .
 lang: c
