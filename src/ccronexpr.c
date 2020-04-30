@@ -52,6 +52,11 @@ static const char* MONTHS_ARR[] = {"FOO", "JAN", "FEB", "MAR", "APR", "MAY", "JU
                                 (abs(num) < 100000000 ? 8 : \
                                 (abs(num) < 1000000000 ? 9 : 10)))))))))
 
+/* ESP and AVR boards provide gmtime() instead of timegm() */
+#if defined(ESP8266) || defined(__AVR__)
+#define CRON_USE_LOCAL_TIME
+#endif 
+
 /* Defining 'cron_mktime' to use use UTC (default) or local time */
 #ifndef CRON_USE_LOCAL_TIME
 
