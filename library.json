@@ -1,0 +1,22 @@
+{
+  "name": "time.ccronexpr",
+  "keywords": "cron, expression, time, date",
+  "description": "C library for simple Cron expression parsing. A 3rd level fork of the staticlibs/ccronexpr. This one I found to be more memory stable.",
+  "repository":
+  {
+    "type": "git",
+    "url": "https://github.com/shaneapowell/time.ccronexpr.git"
+  },
+  "authors":
+  [
+    {
+      "name": "Shane Powell",
+      "email": "shaneapowell@hotmail.com",
+      "url": "https://github.com/shaneapowell",
+      "maintainer": true
+    }
+  ],
+  "version": "1.1.0",
+  "frameworks": "arduino",
+  "platforms": "*"
+}

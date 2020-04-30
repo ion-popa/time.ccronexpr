@@ -1,7 +1,0 @@
-
-
-name: time.ccronexpr
-version: master
-inc: .
-src: .
-lang: c

@@ -1,6 +1,8 @@
 Cron expression parsing in ANSI C
 =================================
 
+A fork of [time.ccronexp from mkn](https://github.com/mkn/time.ccronexpr). I've simply added a #define to allow this to run on ESP8266 and VR boards.  I've also added the files to allow this library to be pulled in with platformIO. 
+
 Given a cron expression and a date, you can get the next date which satisfies the cron expression.
 
 Supports cron expressions with `seconds` field. Based on implementation of [CronSequenceGenerator](https://github.com/spring-projects/spring-framework/blob/babbf6e8710ab937cd05ece20270f51490299270/spring-context/src/main/java/org/springframework/scheduling/support/CronSequenceGenerator.java) from Spring Framework.
