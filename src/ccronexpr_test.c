@@ -4,7 +4,7 @@
  *
  * Created on February 24, 2015, 9:36 AM
  */
-
+#ifdef CRON_TEST
 #include <assert.h>
 #include <stdlib.h>
 #include <stdio.h>
@@ -258,4 +258,5 @@ int main() {
 
     return 0;
 }
+#endif
 
