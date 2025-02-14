@@ -53,7 +53,7 @@ static const char* MONTHS_ARR[] = {"FOO", "JAN", "FEB", "MAR", "APR", "MAY", "JU
                                 (abs(num) < 1000000000 ? 9 : 10)))))))))
 
 /* ESP and AVR boards provide gmtime() instead of timegm() */
-#if defined(ESP8266) || defined(__AVR__)
+#if defined(ESP8266) || defined(__AVR__) || defined (ARDUINO_ARCH_NRF52)
 #define CRON_USE_LOCAL_TIME
 #endif 
 
