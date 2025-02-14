@@ -14,6 +14,10 @@
 #include <time64.h>
 #endif /* ANDROID */
 
+#ifdef __cplusplus
+extern "C" {
+#endif
+
 /**
  * Parsed cron expression
  */
@@ -58,6 +62,10 @@ time_t cron_next(cron_expr* expr, time_t date);
  * @param expr parsed cron expression to free
  */
 void cron_expr_free(cron_expr* expr);
+
+#ifdef __cplusplus
+}
+#endif
 
 #endif	/* CCRONEXPR_H */
 
